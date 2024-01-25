@@ -1,0 +1,30 @@
+Practice Problem Instructions
+=============================
+
+There will be a directory (folder) for each week, numbered 1,2,3...and so on.
+I will add more of these as the semester goes on.
+
+Each exercise is in a `.cpp` file.  There will be a comment at the top of each
+one labeled "TODO" with the question / specific instructions.  You should
+**edit these cpp files directly** when doing the exercises.  If you feel
+uneasy about losing the original content, don't worry -- you can use `git` to
+see the original after you've modified it.  Just ask me to show you how.
+
+
+Makefiles
+---------
+
+I will put a `Makefile` in each week's directory which will turn each
+`xyz.cpp` into a runnable program named `xyz`.  All you should have to do to
+compile is run `make` from within one of those directories.
+
+
+Advice
+------
+
+I unfortunately do not have the resources to grade all of these, but I would
+recommend you treat them as required nonetheless.  There is no substitute for
+consistent practice when it comes to developing a skill.
+
+By the way, if you want to check your answers with me, I will be more than
+happy to give feedback!  Just ask me in office hours or on piazza.
