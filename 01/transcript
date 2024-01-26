@@ -1,0 +1,18 @@
+Script started on 2024-01-25 11:47:34-05:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="97" LINES="25"]
+[?2004h+[[32m01[0m]$ ls
+[?2004l[0m[1mlargest.cpp[0m  [0mtranscript[0m
+[?2004h+[[32m01[0m]$ g++ largest.cpp 
+[?2004l[?2004h+[[32m01[0m]$ [Kls
+[?2004l[0m[04;32ma.out[0m  [1mlargest.cpp[0m  [0mtranscript[0m
+[?2004h+[[32m01[0m]$ ./a.out 
+[?2004l234
+23232
+54
+45
+4567567
+2342
+largest value was 4567567
+[?2004h+[[32m01[0m]$ [K+[[32m01[0m]$ [K+[[32m01[0m]$ [?2004l
+exit
+
+Script done on 2024-01-25 12:09:57-05:00 [COMMAND_EXIT_CODE="0"]
