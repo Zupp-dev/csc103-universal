@@ -1,0 +1,91 @@
+Script started on 2024-02-01 11:31:49-05:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="97" LINES="25"]
+[?2004h+[[32m03[0m]$ make
+[?2004lg++ -O2 -Wall -Wformat=2 -march=native -DNDEBUG -o datatypes datatypes.cpp
+[?2004h+[[32m03[0m]$ ./datatypes 
+[?2004lcharacter takes 1 bytes.
+[?2004h+[[32m03[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wformat=2 -march=native -DNDEBUG -o datatypes datatypes.cpp
+./[?2004h+[[32m03[0m]$ ./datatypes 
+[?2004lcharacter takes 1 byte(s).
+[?2004h+[[32m03[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wformat=2 -march=native -DNDEBUG -o datatypes datatypes.cpp
+[?2004h+[[32m03[0m]$ ./datatypes 
+[?2004lcharacter takes 1 byte(s).
+int takes 4 byte(s).
+long takes 8 byte(s).
+[?2004h+[[32m03[0m]$ [Kfree -mh
+[?2004l               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       553Mi       7.0Gi        66Mi       435Mi       7.1Gi
+Swap:          8.0Gi          0B       8.0Gi
+[?2004h+[[32m03[0m]$ make
+[?2004lg++ -O2 -Wall -Wformat=2 -march=native -DNDEBUG -o datatypes datatypes.cpp
+[?2004h+[[32m03[0m]$ ./datatypes 
+[?2004lcharacter takes 1 byte(s).
+int takes 4 byte(s).
+long takes 8 byte(s).
+double takes 8 byte(s).
+[?2004h+[[32m03[0m]$ [K./datatypes 
+[?2004lcharacter takes 1 byte(s).
+int takes 4 byte(s).
+long takes 8 byte(s).
+double takes 8 byte(s).
+o_O
+[?2004h+[[32m03[0m]$ [K./datatypes 
+[?2004lcharacter takes 1 byte(s).
+int takes 4 byte(s).
+long takes 8 byte(s).
+double takes 8 byte(s).
+o_O
+3f == 0.30000000000000004
+d == 0.29999999999999999
+[?2004h+[[32m03[0m]$ [K./datatypes 
+[?2004lcharacter takes 1 byte(s).
+int takes 4 byte(s).
+long takes 8 byte(s).
+double takes 8 byte(s).
+o_O
+3f == 0.300000
+d  == 0.300000
+[?2004h+[[32m03[0m]$ [K./datatypes 
+[?2004lcharacter takes 1 byte(s).
+int takes 4 byte(s).
+long takes 8 byte(s).
+double takes 8 byte(s).
+o_O
+3f == 0.300000
+d  == 0.300000
+39278124372921876561196835904917714753144115943234782969143489074304672112914016338742048911622614673486784401187041861113162885373948865611[?2004h+[[32m03[0m]$ [K./  [H[2J+[[32m03[0m]$ ./::[[32m03[0m]$ .++[[32m03[0m]$ .A/[1P/::[[32m03[0m]$ [2P+[[32m03[0m]$ ./datatypes 
+[?2004lcharacter takes 1 byte(s).
+int takes 4 byte(s).
+long takes 8 byte(s).
+double takes 8 byte(s).
+o_O
+3f == 0.300000
+d  == 0.300000
+3
+9
+27
+81
+243
+729
+2187
+6561
+19683
+59049
+177147
+531441
+1594323
+4782969
+14348907
+43046721
+129140163
+387420489
+1162261467
+3486784401
+1870418611
+1316288537
+3948865611
+[?2004h+[[32m03[0m]$ [K[?2004l
+exit
+
+Script done on 2024-02-01 11:53:04-05:00 [COMMAND_EXIT_CODE="0"]
