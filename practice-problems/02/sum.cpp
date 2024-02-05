@@ -6,7 +6,16 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int num, sum =0;
+
+	cout << "Please enter a integer (a non integer will stop the program): " << std::endl;
+
+	while (cin >> num){
+		sum += num;
+	}
+
+	cout << "Sum of integers: " << sum << std::endl;
+
 	return 0;
 }
 
