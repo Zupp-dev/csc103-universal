@@ -14,7 +14,8 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int a =2.5;
+	}
 	return 0;
 }
 
