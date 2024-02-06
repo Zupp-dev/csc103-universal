@@ -14,9 +14,43 @@ using std::cout;
 
 int main()
 {
-	int a =2.5;
+	int x;
+	int y;
+	int e_sum = 0;
+	int o_sum = 0;
+	int Diff;
+	
+	cout << "Please input an integer: " << "\n";
+	while(true){
+		cin >> x;
+		if(!cin.good()){
+			break;
+		}
+		if(x % 2 == 0){
+			e_sum = e_sum + x;
+		} else if(x % 2 == 1) {
+			o_sum = o_sum + x;
+				
+		} else {
+			break ;
+		} 
 	}
+
+
+	cout << "The following is the sum of all even numbers: " << e_sum << "\n";
+
+	
+	cout << "The following is the sum of all odd numbers: " << o_sum << "\n";
+
+	Diff = e_sum - o_sum;
+
+	cout << "The differnce of the sum of all the evens and the odds is: " << Diff << "\n";
+
+
+
+	
 	return 0;
 }
+
 
 // vim:foldlevel=2
