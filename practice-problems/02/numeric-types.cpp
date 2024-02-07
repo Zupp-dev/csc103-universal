@@ -15,7 +15,18 @@ int main()
 	 *    with large integers.
 	 * 3. What type of result do you get when adding or multiplying
 	 *    floating point values with integers? */
+	
+	int num;
+	float num2;
+	float num3;
+	num = 1.5;
+	num2 = 3;
+	num3 = num * num2;
+	cout << num << "\n";
 
+	cout << num2 << "\n";
+
+	cout << num3 << "\n";
 	return 0;
 }
 

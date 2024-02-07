@@ -11,7 +11,21 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int n;
+	cout << "Enter an integer: " << "\n";
+	cin >> n;
+	
+	int orginalN = n;
+	int exponent = 0;
+	while(n % 2 == 0) {
+		n /= 2;
+		exponent++;
+	}
+	
+	cout << " The exponent of the largest power of two that divides " << orginalN << " is: " << exponent << "\n";
+
+
+
 	return 0;
 }
 
