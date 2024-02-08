@@ -12,6 +12,27 @@ int main()
 	 * are stored in something like scientific notation -- there is a
 	 * fixed amount of space to write the exponent, and there is also
 	 * a fixed amount of space for the coefficient... */
+	
+	double d, e, f, dplusf;
+	int x = 0;
+
+	d != e;
+	
+	dplusf = d + f;
+
+	dplusf  = e + f;
+
+	cout << "Please input 3 integers: " << "\n";
+	while(x < 3){
+		cin >> d;
+		cin >> e;
+		cin >> f;
+		x = x + 3;
+	} 
+
+	cout << d;
+	cout << e;
+	cout << f;
 
 	return 0;
 }

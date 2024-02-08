@@ -9,7 +9,25 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int x = 0;
+	int sum = 0;
+	int y, z;
+	float Average;
+	
+	cout << "How many integers will you be using today: " << "\n";
+	cin >> y;
+	while(x < y){
+		cin >> z;
+		x++;
+		sum = sum + z;
+	}
+	
+	Average = sum / y;
+
+	cout << "The average of your inputed integers is: " << Average << "\n";
+	
+
+
 	return 0;
 }
 
