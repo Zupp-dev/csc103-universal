@@ -12,8 +12,14 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int num;
+
+	for (num = 32; num <= 126; num++ ){
+		cout <<" " << num << " = " << (char) num << "\n";
+	}
 	return 0;
 }
+
+
 
 // vim:foldlevel=2
