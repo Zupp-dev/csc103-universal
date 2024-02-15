@@ -14,4 +14,7 @@ int main()
 	return 0;
 }
 
+/* TODO: (bonus question) Can you rewrite your swap function so that it does
+ * not use any if statements at all?  (Hint: use algebra/arithmetic...)  */
+
 // vim:foldlevel=2
