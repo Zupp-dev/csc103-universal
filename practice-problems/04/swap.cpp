@@ -15,6 +15,6 @@ int main()
 }
 
 /* TODO: (bonus question) Can you rewrite your swap function so that it does
- * not use any if statements at all?  (Hint: use algebra/arithmetic...)  */
+ * not use a temporary variable?  (Hint: use algebra/arithmetic...)  */
 
 // vim:foldlevel=2
