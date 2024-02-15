@@ -10,6 +10,11 @@ one labeled "TODO" with the question / specific instructions.  You should
 uneasy about losing the original content, don't worry -- you can use `git` to
 see the original after you've modified it.  Just ask me to show you how.
 
+*UPDATE:* I will try to start adding a file `checklist` to each directory
+which will help you keep track of which ones you have done, but also will
+suggest a plausible order in which you should attempt them (increasing
+difficulty / number of required concepts).
+
 
 Makefiles
 ---------
