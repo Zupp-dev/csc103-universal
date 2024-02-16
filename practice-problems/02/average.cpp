@@ -9,13 +9,14 @@ using std::cout;
 
 int main()
 {
-	int x = 0;
-	int sum = 0;
+	float x = 0;
+	float sum = 0;
 	int y, z;
 	float Average;
 	
-	cout << "How many integers will you be using today: " << "\n";
+	cout << "How many integers will you be using today: ";
 	cin >> y;
+	cout << "\n";
 	while(x < y){
 		cin >> z;
 		x++;
