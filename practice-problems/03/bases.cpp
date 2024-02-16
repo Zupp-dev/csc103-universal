@@ -8,10 +8,33 @@
 #include <iostream>
 using std::cin;
 using std::cout;
+#include <string>
+using std::string;
 
 int main()
 {
-	/* your answer goes here... */
+	int b, n;
+	string x[];
+
+
+	cout << "Please input a number less than 10" << "\n";
+	cin >> b;
+	cout << "Please input any  integer" << "\n";
+	cin >> n;
+
+	while(n / b){
+		int p = 0;
+		x[p++] = n % b;
+		n /= b;
+		if(n / b < 1){
+			break;
+		}else {
+			continue;
+		}
+	}
+
+	cout << "The base " << b << "representation of " << n << "is " << x << "\n";
+
 	return 0;
 }
 

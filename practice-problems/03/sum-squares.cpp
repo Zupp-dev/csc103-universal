@@ -10,10 +10,28 @@
 using std::cin;
 using std::cout;
 
+int sum_o_square (int n)
+{
+	int sum = 0;
+
+	for(int i = 1; i <= n; ++i){
+		if(i % 2 == 1){	
+		sum += i * i;
+		}else{
+			continue;
+		}
+	}
+	return sum;
+}
+
 int main()
 {
-	/* your answer goes here... */
+	int n;
+    cout << "Please input any integer: " << "\n";
+	cin >> n;
+	cout << "The sum of the first " << n << " squares is " << sum_o_square(n) << "\n";
 	return 0;
 }
+
 
 // vim:foldlevel=2

@@ -4,12 +4,22 @@
  * clearly on paper (say using the post-it note model) before trying to write
  * any code. */
 #include <iostream>
+#include <climits>
 using std::cin;
 using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int n;
+	int z = INT_MAX;
+	cout << "Please input as many integers as you want (the program will stop when you press a non integer" << "\n";
+	while(cin >> n){
+		if(n < z){
+			z = n;
+		}
+	}
+
+	cout << "The smallest integer was: " << z << "\n";
 	return 0;
 }
 
