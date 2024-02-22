@@ -11,15 +11,22 @@ using std::cout;
 int main()
 {
 	int n;
-	int z = INT_MAX;
+	int small = INT_MAX;
+	int twosmall = INT_MAX;
+
 	cout << "Please input as many integers as you want (the program will stop when you press a non integer" << "\n";
 	while(cin >> n){
-		if(n < z){
-			z = n;
+		if(n > small && n < twosmall){
+			twosmall = n;
+		}else if(n < small){
+			twosmall = small;
+			small = n;
 		}
 	}
 
-	cout << "The smallest integer was: " << z << "\n";
+	cout << "The smallest integer was: " << small << "\n";
+	cout << "The second smallest integer was: " << twosmall << "\n";
+
 	return 0;
 }
 

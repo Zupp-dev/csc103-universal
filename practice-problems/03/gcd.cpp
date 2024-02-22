@@ -9,7 +9,15 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int n, m;
+	bool greater  = true;
+
+	cout << "Please input two integers: " << "\n";
+	cin >> n >> m;
+
+	if(n < m)
+
+	for (int i = 1; i
 	return 0;
 }
 
