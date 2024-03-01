@@ -4,7 +4,7 @@
  * output digits "163", as 94 = 1*49 + 6*7 + 3.  ("361" is also ok if
  * you print the least significant digit first).  Or if b=2 and n=7,
  * then you would print "111" since 7 = 1*4 + 1*2 + 1. */
-/*
+
 #include <iostream>
 using std::cin;
 using std::cout;
@@ -13,7 +13,7 @@ using std::string;
 
 int main()
 {
-	int b, n;
+	int b, n, dum;
 	string x[];
 
 
@@ -22,20 +22,18 @@ int main()
 	cout << "Please input any  integer" << "\n";
 	cin >> n;
 
-	while(n / b){
-		int p = 0;
-		x[p++] = n % b;
-		n /= b;
-		if(n / b < 1){
-			break;
-		}else {
-			continue;
+	while(n > 0){
+		for(int i = 1; dum = 0; ; i++){
+			if(n % b == 1){
+				n / b = dum;
+			}
 		}
+	
 	}
 
 	cout << "The base " << b << "representation of " << n << "is " << x << "\n";
 
 	return 0;
 }
-*/
+
 // vim:foldlevel=2
