@@ -11,29 +11,46 @@ using std::cout;
 #include <string>
 using std::string;
 
+int baseCalc(unsigned &n, unsigned b);
+string reverseString(string s);
+
 int main()
 {
-	int b, n, dum;
-	string x[];
-
+	unsigned b, n, n1;
+	string s = "";
 
 	cout << "Please input a number less than 10" << "\n";
 	cin >> b;
 	cout << "Please input any  integer" << "\n";
 	cin >> n;
-
-	while(n > 0){
-		for(int i = 1; dum = 0; ; i++){
-			if(n % b == 1){
-				n / b = dum;
-			}
-		}
-	
+	if(b > 10 || b == 0 || b == 1){
+		cout << "Go to hell! ";
+	}
+	if(n == 0){
+		s = "0";
+	}
+	while(n){
+		unsigned rmdr = baseCalc(n, b);
+		s += '0'+rmdr;
 	}
 
-	cout << "The base " << b << "representation of " << n << "is " << x << "\n";
+	cout << reverseString(s) << "\n";
 
 	return 0;
 }
 
+int baseCalc(unsigned &n, unsigned b)
+{
+	unsigned r = n % b;
+	n /= b;
+	return r;
+}
+
+string reverseString(string s){
+	string ret = "";
+	for(int i = s.length()-1; -1 < i; i--){
+		ret += s[i];
+	}
+	return ret;
+}
 // vim:foldlevel=2

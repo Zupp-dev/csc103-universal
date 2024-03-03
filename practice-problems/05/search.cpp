@@ -8,11 +8,31 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+bool func(vector<int> &V, int x){
+	for(int i = 0; i < V.size(); i++){
+		if(V[i] == x){
+			return true;
+		}
+	}
+	return false;
+}
 
 int main()
 {
-	/* TODO: call your function, make sure it works... */
+	int x, n;
+	vector<int> V;
+	cout << "Please input one random number: " << "\n";
+	cin >> x;
+	cout << "Please input a list of numbers: " << "\n";
+	while(cin >> n){
+		V.push_back(n);
+	}
+	if(func(V, x) == true){
+		cout << "The random number you initially inputed was found in your list of numbers!" << "\n";
+	}else{
+		cout << "Go to hell! "<< "\n";
+	}
+
 	return 0;
 }
 
