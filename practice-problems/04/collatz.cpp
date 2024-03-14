@@ -19,10 +19,27 @@
 using std::cin;
 using std::cout;
 
+int collatz(int n);
+
 int main()
 {
-	/* your answer goes here... */
+	int n;
+	cout << "Please input any integer: " << "\n";
+	cin >> n;
+	cout << "The number of steps it took for " << n << " to equal 1 is: " << collatz(n) << "\n";
 	return 0;
 }
 
+int collatz(int n){
+	int i;
+	for(i = 0; n != 1; i++){
+		if(n % 2 == 0){
+			n /= 2;
+		}else{
+			n = (n*3)+1;
+		}
+	}
+	return i;
+
+}
 // vim:foldlevel=2

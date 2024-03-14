@@ -7,12 +7,26 @@ using std::cout;
 
 /* your answer goes here... */
 
+int max(int& x, int& y, int& z);
+
+
 int main()
 {
 	int x,y,z;
 	cin >> x >> y >> z;
-	// TODO: call your function, make sure it works...
+	cout << max(x,y,z) << "\n";
 	return 0;
+}
+
+int max(int& x, int& y, int& z){
+	int max = x;
+	if(y > max){
+		max = y;
+	}
+	if(z > max){
+		max = z;
+	}
+	return max;
 }
 
 // vim:foldlevel=2
