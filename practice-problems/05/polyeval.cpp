@@ -11,13 +11,31 @@ using std::cin;
 using std::cout;
 #include <vector>
 using std::vector;
+#include <cmath>
 
 int polyeval(const vector<int>& C, int x);
 
 int main()
 {
-	/* TODO: once you have written polyeval, add some test code here */
+	int x, c;
+	vector<int> C;
+	cout << "Please input the number you want your polynomial to be evaluated too: " << "\n";
+	cin >> x;
+	cout << "Please input the coeffecients you want in your polynomial: " << "\n";
+	while(cin >> c){
+		C.push_back(c);
+	}
+	cout << "The evaluation of your polynomial is: " << polyeval(C, x) << "\n";
 	return 0;
+}
+
+
+int polyeval(const vector<int>& C, int x){
+	int p = 0;
+	for(size_t i = 0; i < C.size(); i++){
+		p += (C[i] * (int)pow(x, i));
+	}
+	return p;
 }
 
 // vim:foldlevel=2

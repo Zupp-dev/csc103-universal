@@ -34,4 +34,7 @@ int main()
 	return 0;
 }
 
+size_t countdigits(size_t n){
+	
+}
 // vim:foldlevel=2
