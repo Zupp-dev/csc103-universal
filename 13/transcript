@@ -1,0 +1,209 @@
+Script started on 2024-03-12 11:03:52-04:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="97" LINES="25"]
+[?2004h+[[32m13[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello !!!!!
+[?2004h+[[32m13[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[01m[Kstrings.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Kstrings.cpp:15:28:[m[K [01;31m[Kerror: [m[Kno match for '[01m[Koperator+[m[K' (operand types are '[01m[Kstd::vector<char>[m[K' and '[01m[Kstd::vector<char>[m[K')
+   15 |         vector<char> v = [32m[Kv1[m[K[01;31m[K+[m[K[34m[Kv2[m[K;
+      |                          [32m[K~~[m[K[01;31m[K^[m[K[34m[K~~[m[K
+      |                          [32m[K|[m[K  [34m[K|[m[K
+      |                          [32m[K|[m[K  [34m[Kvector<[...]>[m[K
+      |                          [32m[Kvector<[...]>[m[K
+In file included from [01m[K/usr/include/c++/13.2/string:48[m[K,
+                 from [01m[K/usr/include/c++/13.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/13.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/13.2/ios:44[m[K,
+                 from [01m[K/usr/include/c++/13.2/ostream:40[m[K,
+                 from [01m[K/usr/include/c++/13.2/iostream:41[m[K,
+                 from [01m[Kstrings.cpp:1[m[K:
+[01m[K/usr/include/c++/13.2/bits/stl_iterator.h:634:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _Iterator> constexpr std::reverse_iterator<_Iterator> std::[01;32m[Koperator+[m[K(typename reverse_iterator<_Iterator>::difference_type, const reverse_iterator<_Iterator>&)[m[K'
+  634 |     [01;36m[Koperator[m[K+(typename reverse_iterator<_Iterator>::difference_type __n,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/stl_iterator.h:634:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kconst std::reverse_iterator<_Iterator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/stl_iterator.h:1808:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _Iterator> constexpr std::move_iterator<_IteratorL> std::[01;32m[Koperator+[m[K(typename move_iterator<_IteratorL>::difference_type, const move_iterator<_IteratorL>&)[m[K'
+ 1808 |     [01;36m[Koperator[m[K+(typename move_iterator<_Iterator>::difference_type __n,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/stl_iterator.h:1808:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kconst std::move_iterator<_IteratorL>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+In file included from [01m[K/usr/include/c++/13.2/string:54[m[K:
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3541:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K'
+ 3541 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3541:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3559:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K'
+ 3559 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3559:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kconst _CharT*[m[K' and '[01m[Kstd::vector<char>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3578:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(_CharT, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K'
+ 3578 |     [01;36m[Koperator[m[K+(_CharT __lhs, const basic_string<_CharT,_Traits,_Alloc>& __rhs)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3578:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3595:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K'
+ 3595 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3595:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3613:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)[m[K'
+ 3613 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3613:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3625:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K'
+ 3625 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3625:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3632:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K'
+ 3632 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3632:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3639:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K'
+ 3639 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3639:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3662:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const _CharT*, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K'
+ 3662 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3662:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kconst _CharT*[m[K' and '[01m[Kstd::vector<char>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3669:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(_CharT, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K'
+ 3669 |     [01;36m[Koperator[m[K+(_CharT __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3669:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3676:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)[m[K'
+ 3676 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3676:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3683:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)[m[K'
+ 3683 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/basic_string.h:3683:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kstrings.cpp:15:29:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::vector<char>[m[K' is not derived from '[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K'
+   15 |         vector<char> v = v1+[01;36m[Kv2[m[K;
+      |                             [01;36m[K^~[m[K
+make: *** [Makefile:22: strings] Error 1
+[?2004h+[[32m13[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello !!!!!
+0
+[?2004h+[[32m13[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello !!!!!
+0
+18446744073709551615
+[?2004h+[[32m13[0m]$ [Kecho $(((  [K[K+[[32m13[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[01m[Kstrings.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Kstrings.cpp:21:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kstd::__cxx11::basic_string<char>::size_type[m[K' {aka '[01m[Klong unsigned int[m[K'} and '[01m[Kint[m[K' [[01;35m[K-Wsign-compare[m[K]
+   21 |         if ([01;35m[Ks1.find("helllll") == -1[m[K) cout << "not found\n";
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+./[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello !!!!!
+0
+18446744073709551615
+not found
+[?2004h+[[32m13[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello !!!!!
+0
+18446744073709551615
+not found
+[?2004h+[[32m13[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello !!!!!
+0
+18446744073709551615
+not found
+size of s (full of NULL chars): 10
+[?2004h+[[32m13[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello !!!!!
+0
+18446744073709551615
+not found
+size of s (full of NULL chars): 10
+length of s (full of NULL chars): 10
+[?2004h+[[32m13[0m]$ [K./strings 
+[?2004lhello !!!!!
+0
+18446744073709551615
+not found
+size of s (full of NULL chars): 10
+length of s (full of NULL chars): 10
+s ==           .
+[?2004h+[[32m13[0m]$ [Kz   [K+[[32m13[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[01m[Kstrings.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Kstrings.cpp:55:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Ksize_t[m[K' {aka '[01m[Klong unsigned int[m[K'} and '[01m[Kint[m[K' [[01;35m[K-Wsign-compare[m[K]
+   55 |                 if ([01;35m[Ki == -1[m[K) {
+      |                     [01;35m[K~~^~~~~[m[K
+[?2004h+[[32m13[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./
+[?2004lbash: ./: Is a directory
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello !!!!!
+hello hell
+s2 found at index 0 in s1
+hello asdfasdf
+s2 found at index 32 in s1
+hello wf tf??
+no match found.
+hello asdfasdf
+s2 found at index 32 in s1
+[?2004h+[[32m13[0m]$ [Kmv /tmp/notes.pdf .
+[?2004l[?2004h+[[32m13[0m]$ [Kls
+[?2004l[0m[1;37mMakefile[0m  [31mnotes.pdf[0m  [0moutline[0m  [04;32mstrings[0m  [1mstrings.cpp[0m  [0mtranscript[0m
+[?2004h+[[32m13[0m]$ git add -f notes.pdf Makefile *.cpp transcript 
+[?2004l[?2004h+[[32m13[0m]$ [Kgits .
+[?2004l## [32mmaster[m...[31morigin/master[m
+[32mA[m  Makefile
+[32mA[m  notes.pdf
+[32mA[m  strings.cpp
+[32mA[m  transcript
+[?2004h+[[32m13[0m]$ [K+[[32m13[0m]$ [K+[[32m13[0m]$ exit
+[?2004lexit
+
+Script done on 2024-03-12 12:08:33-04:00 [COMMAND_EXIT_CODE="0"]
