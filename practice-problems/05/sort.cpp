@@ -10,7 +10,7 @@ using std::cout;
 using std::vector;
 
 /* your answer goes here... */
-vector<int> sort(vector<int> V);
+void sort(vector<int>& V);
 
 int main()
 {
@@ -22,27 +22,26 @@ int main()
 		V.push_back(n);
 	}
 	cout << "Your sorted list is: " << "\n";
-	vector<int> S = sort(V);
-	for(size_t i = 0; i < S.size()-1; i++){
-		cout << S[i] << " "; 
+	sort(V);
+	for(size_t i = 0; i < V.size(); i++){
+		cout << V[i] << " "; 
 	}
 	cout << "\n";
 
 	return 0;
 }
 
-vector<int> sort(vector<int> V){
+void sort(vector<int>& V){
 	int swp;
-	for(int i = 0; V.size()-1; i++){
-		for(int j = 0; V.size()-1; i++){
-			if(V[i] < V[j+1]){
+	for(size_t i = 0; i < V.size(); i++){
+		for(size_t j = i + 1; j < V.size() ; j++){
+			if(V[i] > V[j]){
 				swp = V[i];
-				V[i] = V[j+1];
-				V[j+1] = swp;
+				V[i] = V[j];
+				V[j] = swp;
 			}
 		}
 	}
-	return V;
 } 
 
 // vim:foldlevel=2

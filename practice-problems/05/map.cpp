@@ -12,7 +12,28 @@ using std::vector;
  * function type for t: */
 typedef void (*transformation)(int&);
 /* In case it helps, here is an example of a function of the above type: */
-void addone(int& x) { x++; }
+
+void map(vector<int>& V, transformation t){
+	for(size_t i = 0; i < V.size(); i++){
+		t(V[i]);
+	}
+}
+
+void addone(int& x){
+	x++;
+}
+
+void multiply(int& x){
+	x *= 2;
+}
+
+void replace(int& x){
+	if(x % 2 == 0){
+		x = 1;
+	}else{
+		x = 0;
+	}
+}
 
 /* your answer goes here... */
 
@@ -24,6 +45,30 @@ void addone(int& x) { x++; }
 
 int main()
 {
+	vector<int> V1 = {1, 2, 3, 4, 5};
+	map(V1, addone);
+	for(size_t i = 0; i < V1.size(); i++){
+		cout << V1[i] << " ";
+	}
+	cout << "\n";
+
+
+
+	vector<int> V2 = {1, 2, 3, 4, 5};
+	map(V2, multiply);
+	for(size_t i = 0; i < V2.size(); i++){
+		cout << V2[i] << " ";
+	}
+	cout << "\n";
+		
+			
+	vector<int> V3 = {1, 2, 3, 4, 5};
+	map(V3, replace);
+	for(size_t i = 0; i < V3.size(); i++){
+		cout << V3[i] << " ";
+	}
+	cout << "\n";
+
 	return 0;
 }
 

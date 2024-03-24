@@ -10,12 +10,35 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+void kratos(vector<int>& V, int d);
 
 int main()
 {
-	/* TODO: call your function, make sure it works... */
+	int v, d;
+	vector<int> V;
+	cout << "Enter target: "<< "\n";
+	cin >> d;
+	cout << "Enter list: " << "\n";
+	while(cin >> v){
+		V.push_back(v);
+	}
+	kratos(V, d);
+	cout << "#'s in list divisble by target are: " << "\n";
+	for(size_t i = 0; i < V.size(); i++){
+		cout << V[i] << " ";
+	}
+	cout << "\n";
 	return 0;
 }
 
+void kratos(vector<int>& V, int d){
+	int writeIndex = 0;
+	for(size_t i = 0; i < V.size(); i++){
+		if(V[i] % d == 0){
+			V[writeIndex] = V[i];
+			writeIndex++;
+		}
+	}
+	V.resize(writeIndex);
+}
 // vim:foldlevel=2

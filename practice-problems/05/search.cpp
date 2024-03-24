@@ -9,7 +9,7 @@ using std::cout;
 using std::vector;
 
 bool func(vector<int> &V, int x){
-	for(int i = 0; i < V.size(); i++){
+	for(size_t i = 0; i < V.size(); i++){
 		if(V[i] == x){
 			return true;
 		}

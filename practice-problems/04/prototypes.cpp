@@ -10,12 +10,29 @@
  * or here:
  * http://www.charlesli.org/pic10a/lectures/lecture8/index.html
  * */
+#include <iostream>
+using std::cout;
+using std::cin;
 
-/* your answer goes here... */
+int factorial(int n);
 
 int main()
 {
+	int n;
+	cout << "Please input a integer: " << "\n";
+	cin >> n;
+	cout << "The factorial of " << n << " is " << factorial(n) << "\n";
+
 	return 0;
+}
+
+int factorial(int n){
+	if ( n == 0 || n ==1 ){
+		return 1;
+	}else {
+		return n * factorial(n-1);
+	}
+		
 }
 
 // vim:foldlevel=2

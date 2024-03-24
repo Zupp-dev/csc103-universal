@@ -12,10 +12,10 @@
 using std::cin;
 using std::cout;
 
-int max(int a, int b, int c);
-void swap(int a, int b);
+int max(int x, int y, int z);
+void swap(int x, int w);
 
-int Main()
+int main()
 {
 	int x,y,z;
 	cin >> x >> y >> z;

@@ -9,12 +9,47 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+void swap(int& a, int& b);
+
+void reverse(vector<int>& V);
 
 int main()
 {
-	/* TODO: call your function, make sure it works... */
-	return 0;
+	int v;
+	vector<int> V;
+	cout << "Enter a list: " << "\n";
+	while(cin >> v){
+		V.push_back(v);
+	}
+	for(int i = 0; i < V.size(); i++){
+		cout << V[i] << " ";
+	}
+	cout << "\n";
+	
+	reverse(V);
+
+	for(int i = 0; i < V.size(); i++){
+		cout << V[i] << " ";
+	}
+	cout << "\n";
+	return 0; 
 }
 
+void swap(int& a, int& b){
+	int swp = a;
+	a = b;
+	b = swp;
+}
+
+void reverse(vector<int>& V){
+	int first = 0;
+	int last = V.size() - 1;
+
+	while(first < last){
+		swap(V[first], V[last]);
+		first++;
+		last--;
+	}
+	
+}
 // vim:foldlevel=2

@@ -10,14 +10,47 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+void unique(vector<int>& V);
 
 int main()
 {
-	/* TODO: call your function, make sure it works... */
+	int v;
+	vector<int> V;
+	cout << "Enter list: " << "\n";
+	while(cin >> v){
+		V.push_back(v);
+	}
+	
+	unique(V);
+
+	cout << "List without duplicates is: " << "\n";
+	for(int i = 0; i < V.size(); i++){
+		cout << V[i] << " ";
+	} 
+	cout << "\n";
+	
 	return 0;
 }
 
+void unique(vector<int>& V){
+	int writeIndex = 0;
+
+	for(int i = 0; i < V.size(); i++){
+		bool isDuplicate = false;
+		
+		for(int j = 0; j < writeIndex; j++){
+			if(V[i] == V[j]){
+				isDuplicate = true;
+				break;
+			}
+		}
+		if(!isDuplicate){
+			V[writeIndex] = V[i];
+			writeIndex++;
+		}
+	}
+	V.resize(writeIndex);
+}
 /* TODO: bonus question: write another version of this function which
  * actually removes the duplicates from the input vector rather than
  * returning an altogether new vector.  NOTE: you could of course do

@@ -31,10 +31,19 @@ size_t countdigits(size_t n);
 
 int main()
 {
+	long unsigned int n;
+	cout << "Enter any int: " << "\n";
+	cin >> n;
+	cout <<" The number of base-10 digits are:  " << countdigits(n) << "\n";
 	return 0;
 }
 
 size_t countdigits(size_t n){
-	
+	int count = 0;
+	while(n > 0){
+		n /= 10;
+		count++;
+	}
+	return count;
 }
 // vim:foldlevel=2

@@ -12,12 +12,41 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
 
+
+bool stochos(vector<int>& V, int t, int& i_index, int& j_index);
 int main()
 {
-	/* TODO: call your function, make sure it works... */
+	int v, t;
+	vector<int> V;
+	cout << "Input target: " << "\n";
+	cin >> t;
+	cout << "Input list: " << "\n";
+	while(cin >> v){
+		V.push_back(v);
+	}
+	int i_index, j_index;
+	bool found = stochos(V, t, i_index, j_index); 
+	if(found){
+		cout << "Target has been found!" << " All the way at: " << i_index << " and " << j_index << " ! " << "\n";
+	}else{
+		cout << "Go to hell!" << "\n";
+	}
 	return 0;
 }
+
+bool stochos(vector<int>& V, int t, int& i_index, int& j_index){ //stochos is apparently the greek word for target :)
+	for(size_t i = 0; i < V.size(); i++){
+		for(size_t j = i+1; j < V.size(); j++){
+			if(V[i]+V[j] == t){
+				i_index = i;
+				j_index = j;
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
 
 // vim:foldlevel=2
